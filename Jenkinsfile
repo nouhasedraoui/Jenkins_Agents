@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT') {
             steps {
-                git branch: 'main', url: 'https://github.com/Melek-ElHajri/Projet-Devops.git'
+                git branch: 'main', url: 'https://github.com/nouhasedraoui/Jenkins_Agents.git'
             }
         }
        /* stage('Build Java Project') {
