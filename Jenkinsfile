@@ -8,7 +8,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/nouhasedraoui/Jenkins_Agents.git'
             }
         }
-        }
+        
        /* stage('Build Java Project') {
             agent { label 'Slave02' } // Kali agent
             steps {
