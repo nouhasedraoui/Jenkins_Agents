@@ -2,10 +2,12 @@ pipeline {
     agent none
 
     stages {
-        stage('GIT') {
+         stage('GIT') {
+            agent { label 'master' }  // Specify an agent (master or any other node you have)
             steps {
                 git branch: 'main', url: 'https://github.com/nouhasedraoui/Jenkins_Agents.git'
             }
+        }
         }
        /* stage('Build Java Project') {
             agent { label 'Slave02' } // Kali agent
