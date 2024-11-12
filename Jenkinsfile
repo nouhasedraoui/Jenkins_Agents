@@ -3,7 +3,7 @@ pipeline {
 
     stages {
          stage('GIT') {
-            agent { label 'master' }  // Specify an agent (master or any other node you have)
+            agent { label 'Contrôleur' }  // Specify an agent (master or any other node you have)
             steps {
                 git branch: 'main', url: 'https://github.com/nouhasedraoui/Jenkins_Agents.git'
             }
