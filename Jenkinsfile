@@ -2,7 +2,7 @@ pipeline {
     agent none
 
     stages {
-        stage('Build Java Project') {
+       /* stage('Build Java Project') {
             agent { label 'Slave02' } // Kali agent
             steps {
                 script {
@@ -14,7 +14,7 @@ pipeline {
                 }
             }
         }
-
+*/
         stage('Build Python Project') {
             agent { label 'Slave01' } // Windows agent
             steps {
