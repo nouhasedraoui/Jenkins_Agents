@@ -2,6 +2,11 @@ pipeline {
     agent none
 
     stages {
+        stage('GIT') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Melek-ElHajri/Projet-Devops.git'
+            }
+        }
        /* stage('Build Java Project') {
             agent { label 'Slave02' } // Kali agent
             steps {
